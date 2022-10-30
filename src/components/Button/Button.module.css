@@ -1,0 +1,47 @@
+.btn button {
+    outline: none;
+    border: 2px solid #fff;
+    font-size: 25px;
+    transition: ease-in-out all .3s;
+    padding: 10px 30px;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    color: #111;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: #ff4c4c;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn button.add {
+    color: #fff;
+    border: 2px solid #ff4c4c;
+    background-color: #ff4c4c;
+}
+
+.btn button.add:hover {
+    color: #ff4c4c;
+    border: 2px solid #ff4c4c;
+    background-color: #fff;
+}
+
+@media (max-width:992px) {
+    .btn button {
+        font-size: 22px;
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:768px) {
+    .btn button {
+        font-size: 20px;
+        padding: 6px 22px;
+    }
+}

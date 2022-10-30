@@ -1,0 +1,55 @@
+.contain {
+    width: 80vw;
+    background-color: #ff4c4c;
+    padding: 40px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 30px;
+    /* left: 50%;
+    transform: translateX(-50%);
+    position: relative; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contain .members {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 50px;
+}
+
+.contain .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width:992px) {
+    .contain {
+        width: 70vw;
+        padding: 30px;
+        border-radius: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        gap: 25px;
+    }
+    .contain .members {
+        gap: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .contain {
+        width: 65vw;
+        padding: 30px;
+        border-radius: 6px;
+        gap: 20px;
+    }
+    .contain .members {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,65 @@
+.choose div {
+    position: absolute;
+    left: 0;
+    width: 70vw;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+    z-index: 99;
+    padding: 40px;
+    background-color: #ff4c4c;
+}
+
+.choose picture img {
+    width: 100%;
+    height: 220px;
+    border-radius: 6px;
+    transition: ease-in-out all .3s;
+}
+
+.choose picture img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0;
+    z-index: -1 !important;
+    position: absolute !important;
+}
+
+@media (max-width:992px) {
+    .choose div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 30px;
+    }
+    .choose picture img {
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:768px) {
+    .choose div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 50%;
+        padding: 20px;
+    }
+    .choose picture img {
+        border-radius: 4px;
+    }
+}

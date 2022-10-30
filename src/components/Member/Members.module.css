@@ -1,0 +1,107 @@
+.member {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.member svg {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: ease-in-out all .3s;
+}
+
+.member svg:hover {
+    cursor: pointer;
+    color: #ff4c4c
+}
+
+.member picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.member .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.member .info .data {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.member .info .data span:first-child {
+    font-size: 35px;
+}
+
+.member .info .data span:last-child {
+    font-size: 30px;
+    color: #ff4c4c;
+}
+
+@media (max-width:992px) {
+    .member {
+        border-radius: 8px;
+        padding: 18px;
+        gap: 25px;
+    }
+    .member svg {
+        top: 18px;
+        right: 18px;
+    }
+    .member picture img {
+        width: 180px;
+        height: 180px;
+    }
+    .member .info {
+        gap: 25px;
+    }
+    .member .info .data span:first-child {
+        font-size: 32px;
+    }
+    .member .info .data span:last-child {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:768px) {
+    .member {
+        border-radius: 6px;
+        padding: 16px;
+        gap: 20px;
+        justify-content: center;
+        display: grid;
+    }
+    .member svg {
+        top: 16px;
+        right: 16px;
+    }
+    .member picture img {
+        width: 160px;
+        height: 160px;
+    }
+    .member .info {
+        gap: 25px;
+        justify-content: center;
+        text-align: center;
+    }
+    .member .info .data span:first-child {
+        font-size: 30px;
+    }
+    .member .info .data span:last-child {
+        font-size: 25px;
+    }
+}

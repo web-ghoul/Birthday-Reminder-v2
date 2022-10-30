@@ -1,0 +1,164 @@
+.form {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .head {
+    text-align: center;
+    font-size: 30px;
+    color: #111;
+    font-weight: 700;
+}
+
+.form .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, .4);
+}
+
+.form form {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 30px;
+    border: #ff4c4c;
+    width: 60vw;
+    padding: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+    z-index: 99;
+    border: 2px solid #ff4c4c;
+}
+
+.form form input,
+select {
+    padding: 10px 30px;
+    outline: none;
+    border: 2px solid #ff4c4c;
+    font-size: 18px;
+}
+
+.form form input:focus,
+.form form select:focus {
+    border-color: #fff;
+    background-color: #eee;
+}
+
+.form form .date {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+}
+
+.form form .date label {
+    font-size: 20px;
+}
+
+.form form .choose_img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.form form .choose_img span {
+    font-size: 20px;
+}
+
+.form form .choose_img div {
+    padding: 5px 20px;
+    font-size: 30px;
+    left: auto;
+    transform: none;
+    border: 2px solid #ff4c4c;
+}
+
+.form form .choose_img div:hover {
+    cursor: pointer;
+    background-color: #ff4c4c;
+}
+
+.form form .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width:992px) {
+    .form .head {
+        font-size: 26px;
+    }
+    .form form {
+        gap: 25px;
+        padding: 35px;
+        border-radius: 5px;
+    }
+    .form form input,
+    select {
+        padding: 8px 25px;
+        font-size: 17px;
+    }
+    .form form .date label {
+        font-size: 18px;
+    }
+    .form form .choose_img {
+        gap: 25px;
+    }
+    .form form .choose_img span {
+        font-size: 18px;
+    }
+    .form form .choose_img div {
+        padding: 4px 18px;
+        font-size: 26px;
+    }
+    .form form .btns {
+        gap: 25px;
+    }
+}
+
+@media (max-width:992px) {
+    .form .head {
+        font-size: 22px;
+    }
+    .form form {
+        gap: 20px;
+        padding: 30px;
+        border-radius: 3px;
+    }
+    .form form input,
+    select {
+        padding: 6px 22px;
+        font-size: 16px;
+    }
+    .form form .date label {
+        font-size: 16px;
+    }
+    .form form .choose_img {
+        gap: 20px;
+    }
+    .form form .choose_img span {
+        font-size: 16px;
+    }
+    .form form .choose_img div {
+        padding: 3px 16px;
+        font-size: 22px;
+    }
+    .form form .btns {
+        gap: 20px;
+    }
+}
